@@ -1,28 +1,25 @@
 package com.svecw.greenbus.dto;
 
-public class User {
-
-	private String userName;
+public class Admin {
+	private String name;
 	private String password;
 	private String emailId;
 	private String phoneNumber;
-	public User( String userName, String password, String emailId, String phoneNumber) {
+	public Admin(String name, String password, String emailId, String phoneNumber) {
 		super();
-
-		this.userName = userName;
+		this.name = name;
 		this.password = password;
 		this.emailId = emailId;
 		this.phoneNumber = phoneNumber;
 	}
-	public User() {
+	public Admin() {
 		super();
 	}
-
-	public String getUserName() {
-		return userName;
+	public String getName() {
+		return name;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getPassword() {
 		return password;
@@ -39,12 +36,13 @@ public class User {
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(String string) {
-		this.phoneNumber = string;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	@Override
 	public String toString() {
-		return "User [userName=" + userName + ", password=" + password + ", emailId=" + emailId + ", phoneNumber="
+		return "Admin [name=" + name + ", password=" + password + ", emailId=" + emailId + ", phoneNumber="
 				+ phoneNumber + "]";
 	}
+	
 }

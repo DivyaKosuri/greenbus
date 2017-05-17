@@ -23,7 +23,7 @@ public class UserDAO {
 			pstmt.setString(1, user.getUserName());
 			pstmt.setString(2, user.getPassword());
 			pstmt.setString(3, user.getEmailId());
-			pstmt.setInt(4, user.getPhoneNumber());
+			pstmt.setString(4, user.getPhoneNumber());
 			int i = pstmt.executeUpdate();
 			if (i > 0) {
 				return true;
@@ -60,7 +60,7 @@ public class UserDAO {
 					temp.setUserName(rs.getString(2));
 					temp.setPassword(rs.getString(3));
 					temp.setEmailId(rs.getString(4));
-					temp.setPhoneNumber(rs.getInt(5));
+					temp.setPhoneNumber(rs.getString(5));
 					userList.add(temp);
 				} while (rs.next());
 			}

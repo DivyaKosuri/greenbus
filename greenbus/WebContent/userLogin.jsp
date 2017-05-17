@@ -23,14 +23,14 @@ function validation(){
 </script>
 </head>
 <body>
-<h3>${successMessage}${errorMessage}</h3>
-<form onsubmit="return validation()" action = "HomeServlet" method="post">
+<center><h3>${successMessage}${errorMessage}</h3></center>
+<form onsubmit="return validation()" action = "http://localhost:8080/greenbus/HomeServlet" method="post">
 <input type = "hidden" value = "login" name = "action" ></input>
 <br><center>e-mail id
 	<input type = "text" name = "emailid" id = "emailid" placeholder = "emailid"></input><br></center><center>password
 <input type = "password" name = "password" id = "password" placeholder = "password"></input></center>
 <span id = "msg"></span>
-<input type = "submit" name = "submit" id = "submit"  ></input>
+<input type = "submit" name = "submit" id = "submit" value = "submit" ></input>
 <br>
 </form>
 </body>

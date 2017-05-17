@@ -24,14 +24,14 @@ function validation(){
 
 </head>
 <body>
-<h3>${successMessage}${errorMessage}</h3>
+<center><h3>${successMessage}${errorMessage}</h3></center>
 <form  onsubmit = "return validation()" action="HomeServlet" method="post">
 	<input type = "hidden" value = "signup" name = "action" ></input>
 	<center>user name
 	<input type = "text" name ="username" id ="username" placeholder = "username"></input></center><br><center>password
 	<input type = "password" name ="password" id ="password" placeholder = "password"></input></center><br><center>e-mail id
 	<input type = "text" name ="emailid" id ="emailid" placeholder = "emailid"></input></center><br><center>phone number
-	<input type = "text" name ="phno" id ="phno" placeholder = "phone number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input></center>
+	<input type = "text" name ="phno" id ="phno" placeholder = "phone number" onkeypress='return event.charCode >= 48 && event.charCode <= 57 && event.charCode =08'></input></center>
 	<br>
 	<span id = "msg"></span>
 	<center><input type = "submit" name = "submit" id = "submit" ></input></center>
